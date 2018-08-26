@@ -22,3 +22,7 @@ Route::get('/test', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/start', 'StartController@index');
+
+Route::get('/start/get-json', 'StartController@getJson');
