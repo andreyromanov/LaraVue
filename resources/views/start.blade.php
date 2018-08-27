@@ -19,4 +19,7 @@
 
 <h1 align="center">Chart Random Component !!!</h1>
 <chartrandom-component></chartrandom-component>
+
+<h1 align="center">Chart Live Component !!!</h1>
+<socket-component></socket-component>
 @endsection

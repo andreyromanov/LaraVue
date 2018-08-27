@@ -62,9 +62,37 @@ public function chartRandom()
 			'label' => 'Silver',
 			'backgroundColor' => '#f26202',
 			'data' => [rand(0,40000), rand(0,40000), rand(0,40000), rand(0,40000)]
+		],
+		[
+			'label' => 'Bronse',
+			'backgroundColor' => 'blue',
+			'data' => [rand(0,40000), rand(0,40000), rand(0,40000), rand(0,40000)]
 		]
 	)
 	];
+}
+
+public function newEvent(\Illuminate\Http\Request $request)
+{
+	$result = [
+		'labels' => ['march', 'april', 'may', 'june'],
+		'datasets' => array([
+			'label' => 'Sales',
+			'backgroundColor' => '#f26202',
+			'data' => [15000, 5000, 11000, 25000]
+		])
+	];
+	if ($request->has('label')) {
+		$result['labels'][] = $request->input('label');
+		$result['datasets'][0]['data'][] = (integer)$request->input('sale');
+
+		if ($request->has('realtime')) {
+			if (filter_var($request->input('realtime'), FILTER_VALIDATE_BOOLEAN)) {
+				event(new \App\Events\NewEvent($result));
+			}
+		}
+	}
+	return $result;
 }
 
 }
