@@ -5069,20 +5069,6 @@ module.exports = Element;
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = {};
-module.exports.Arc = __webpack_require__(249);
-module.exports.Line = __webpack_require__(250);
-module.exports.Point = __webpack_require__(251);
-module.exports.Rectangle = __webpack_require__(252);
-
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -5188,6 +5174,20 @@ module.exports = function normalizeComponent (
     options: options
   }
 }
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = {};
+module.exports.Arc = __webpack_require__(249);
+module.exports.Line = __webpack_require__(250);
+module.exports.Point = __webpack_require__(251);
+module.exports.Rectangle = __webpack_require__(252);
 
 
 /***/ }),
@@ -36416,7 +36416,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(173);
-module.exports = __webpack_require__(297);
+module.exports = __webpack_require__(300);
 
 
 /***/ }),
@@ -36447,6 +36447,7 @@ Vue.component('chartline-component', __webpack_require__(235));
 Vue.component('chartpie-component', __webpack_require__(287));
 Vue.component('chartrandom-component', __webpack_require__(291));
 Vue.component('socket-component', __webpack_require__(294));
+Vue.component('socket-chat-component', __webpack_require__(297));
 
 var app = new Vue({
   el: '#app'
@@ -75377,7 +75378,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(227)
 /* template */
@@ -75496,7 +75497,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(230)
 /* template */
@@ -75638,7 +75639,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(233)
 /* template */
@@ -75810,7 +75811,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(236)
 /* template */
@@ -76128,7 +76129,7 @@ __webpack_require__(244)(Chart);
 
 Chart.defaults = __webpack_require__(2);
 Chart.Element = __webpack_require__(5);
-Chart.elements = __webpack_require__(6);
+Chart.elements = __webpack_require__(7);
 Chart.Interaction = __webpack_require__(46);
 Chart.layouts = __webpack_require__(11);
 Chart.platform = __webpack_require__(47);
@@ -85624,7 +85625,7 @@ webpackContext.id = 267;
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('bar', {
@@ -86135,7 +86136,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('bubble', {
@@ -86322,7 +86323,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('doughnut', {
@@ -86628,7 +86629,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('line', {
@@ -86968,7 +86969,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('polarArea', {
@@ -87197,7 +87198,7 @@ module.exports = function(Chart) {
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('radar', {
@@ -87562,7 +87563,7 @@ module.exports.title = __webpack_require__(285);
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(6);
+var elements = __webpack_require__(7);
 var helpers = __webpack_require__(1);
 
 defaults._set('global', {
@@ -88757,7 +88758,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(288)
 /* template */
@@ -88903,7 +88904,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(292)
 /* template */
@@ -89037,7 +89038,7 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(7)
+var normalizeComponent = __webpack_require__(6)
 /* script */
 var __vue_script__ = __webpack_require__(295)
 /* template */
@@ -89273,6 +89274,174 @@ if (false) {
 
 /***/ }),
 /* 297 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(6)
+/* script */
+var __vue_script__ = __webpack_require__(298)
+/* template */
+var __vue_template__ = __webpack_require__(299)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/SocketChatComponent.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2c88996b", Component.options)
+  } else {
+    hotAPI.reload("data-v-2c88996b", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 298 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            dataMessages: [],
+            message: ""
+        };
+    },
+
+    mounted: function mounted() {
+        var socket = io('http://localhost:3000');
+        socket.on("news-action:App\\Events\\NewMessage", function (data) {
+            this.dataMessages.push(data.message);
+        }.bind(this));
+    },
+
+
+    methods: {
+        sendMessage: function sendMessage() {
+            var _this = this;
+
+            axios({
+                method: 'get',
+                url: '/start/send-message',
+                params: { message: this.message }
+            }).then(function (response) {
+                _this.message = "";
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 299 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c(
+            "textarea",
+            { staticClass: "form-control", attrs: { rows: "6", readonly: "" } },
+            [_vm._v(_vm._s(_vm.dataMessages.join("\n")))]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group mb-3" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message,
+                expression: "message"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text" },
+            domProps: { value: _vm.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.message = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "input-group-append" }, [
+          _c(
+            "button",
+            { staticClass: "btn btn-primary", on: { click: _vm.sendMessage } },
+            [_vm._v("Send")]
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-2c88996b", module.exports)
+  }
+}
+
+/***/ }),
+/* 300 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

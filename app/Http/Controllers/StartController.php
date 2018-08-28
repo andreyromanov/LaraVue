@@ -95,4 +95,9 @@ public function newEvent(\Illuminate\Http\Request $request)
 	return $result;
 }
 
+public function sendMessage(\Illuminate\Http\Request $request)
+{
+	event(new \App\Events\NewMessage($request->input('message')));
+}
+
 }

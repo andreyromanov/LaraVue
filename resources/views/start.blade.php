@@ -22,4 +22,7 @@
 
 <h1 align="center">Chart Live Component !!!</h1>
 <socket-component></socket-component>
+
+<h1 align="center">Chat Component !!!</h1>
+<socket-chat-component></socket-chat-component>
 @endsection
